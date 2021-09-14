@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-java';
+  value1: number = 0;
+  value2: number = 0;
+  sum = 0;
+
+
+  getSum(): void {
+    this.sum = this.value1 + this.value2;
+  }
 }
